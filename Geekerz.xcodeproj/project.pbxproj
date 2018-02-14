@@ -17,6 +17,7 @@
 		73F450E9203421C100921253 /* GeekerzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F450E8203421C100921253 /* GeekerzTests.swift */; };
 		73F450F4203421C200921253 /* GeekerzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F450F3203421C200921253 /* GeekerzUITests.swift */; };
 		73F45102203425FB00921253 /* cat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 73F45101203425FB00921253 /* cat.jpeg */; };
+		73F4510520342CC000921253 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73F4510420342CC000921253 /* GoogleService-Info.plist */; };
 		886D7CC7614EBBF5AFAFB129 /* Pods_GeekerzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328B24B9460264D9D657F212 /* Pods_GeekerzTests.framework */; };
 		8FC880F538E6B87E35202DE7 /* Pods_GeekerzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A719ABCF86FBF6AAA8BFDE6F /* Pods_GeekerzUITests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		73F450F3203421C200921253 /* GeekerzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekerzUITests.swift; sourceTree = "<group>"; };
 		73F450F5203421C200921253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73F45101203425FB00921253 /* cat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpeg; sourceTree = "<group>"; };
+		73F4510420342CC000921253 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		90AA264DEBF760CD5FE76896 /* Pods-GeekerzUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekerzUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeekerzUITests/Pods-GeekerzUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9BF4A76B957F7AF5F9BE6D99 /* Pods-Geekerz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geekerz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Geekerz/Pods-Geekerz.debug.xcconfig"; sourceTree = "<group>"; };
 		A719ABCF86FBF6AAA8BFDE6F /* Pods_GeekerzUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekerzUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 			children = (
 				73F450D0203421C100921253 /* AppDelegate.swift */,
 				73F450D2203421C100921253 /* ViewController.swift */,
+				73F4510420342CC000921253 /* GoogleService-Info.plist */,
 				73F451032034260300921253 /* images */,
 				73F450D4203421C100921253 /* Main.storyboard */,
 				73F450DA203421C100921253 /* Assets.xcassets */,
@@ -297,6 +300,7 @@
 			files = (
 				73F45102203425FB00921253 /* cat.jpeg in Resources */,
 				73F450DE203421C100921253 /* LaunchScreen.storyboard in Resources */,
+				73F4510520342CC000921253 /* GoogleService-Info.plist in Resources */,
 				73F450DB203421C100921253 /* Assets.xcassets in Resources */,
 				73F450D6203421C100921253 /* Main.storyboard in Resources */,
 			);
@@ -340,9 +344,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Geekerz/Pods-Geekerz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
