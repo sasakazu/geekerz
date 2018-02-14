@@ -64,7 +64,7 @@
         <!--Acount-->
         <scene sceneID="UZ5-fT-Jsz">
             <objects>
-                <viewController id="i0P-DT-1Xa" sceneMemberID="viewController">
+                <viewController id="i0P-DT-1Xa" customClass="acountViewController" customModule="Geekerz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Vf-rw-kZ8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,8 +109,8 @@
                                 <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xca-MU-jUN">
-                                <rect key="frame" x="16" y="584" width="343" height="34"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xca-MU-jUN" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="584" width="375" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
