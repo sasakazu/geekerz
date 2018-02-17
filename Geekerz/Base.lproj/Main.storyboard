@@ -10,40 +10,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search-->
+        <!--Ranking-->
         <scene sceneID="GCY-vl-Qes">
             <objects>
-                <viewController id="DHb-0Y-xvw" sceneMemberID="viewController">
+                <viewController id="DHb-0Y-xvw" customClass="rankingViewController" customModule="Geekerz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qkj-Rh-WBx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRg-lc-m7A">
-                                <rect key="frame" x="0.0" y="25" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="Search" id="W8u-1Q-Uuw"/>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-EO-QYM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JSG-eC-Tfy">
-                                <rect key="frame" x="0.0" y="69" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="DHb-0Y-xvw" id="MlI-XU-1T0"/>
-                                </connections>
-                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uaq-xI-zMl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="BCl-ie-gkt">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BCl-ie-gkt" id="O6h-z0-Zmu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uaq-xI-zMl" firstAttribute="bottom" secondItem="lS4-2x-EdJ" secondAttribute="bottom" id="30a-T6-TaD"/>
+                            <constraint firstItem="Uaq-xI-zMl" firstAttribute="trailing" secondItem="lS4-2x-EdJ" secondAttribute="trailing" id="4RA-zm-RbU"/>
+                            <constraint firstItem="Uaq-xI-zMl" firstAttribute="top" secondItem="Qkj-Rh-WBx" secondAttribute="top" id="81v-7A-quH"/>
+                            <constraint firstItem="Uaq-xI-zMl" firstAttribute="leading" secondItem="lS4-2x-EdJ" secondAttribute="leading" id="R6p-ap-eHL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lS4-2x-EdJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" id="hSu-gF-wWK"/>
+                    <tabBarItem key="tabBarItem" title="Ranking" image="crown.png" id="hSu-gF-wWK"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="0h8-Q0-ZiJ" id="knh-gL-1J4"/>
                     </connections>
@@ -52,14 +51,13 @@
                 <searchDisplayController id="0h8-Q0-ZiJ">
                     <connections>
                         <outlet property="delegate" destination="DHb-0Y-xvw" id="RDk-MW-VBt"/>
-                        <outlet property="searchBar" destination="JSG-eC-Tfy" id="yzO-mG-nSY"/>
                         <outlet property="searchContentsController" destination="DHb-0Y-xvw" id="x0e-2H-vxZ"/>
                         <outlet property="searchResultsDataSource" destination="DHb-0Y-xvw" id="ty6-qd-eM2"/>
                         <outlet property="searchResultsDelegate" destination="DHb-0Y-xvw" id="Ey4-Rr-Zvn"/>
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="353" y="411"/>
+            <point key="canvasLocation" x="352.80000000000001" y="410.64467766116945"/>
         </scene>
         <!--Acount-->
         <scene sceneID="UZ5-fT-Jsz">
@@ -125,7 +123,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AU5-B2-gms"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Acount" id="El8-z9-pMR"/>
+                    <tabBarItem key="tabBarItem" title="Acount" image="acount.png" id="El8-z9-pMR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHo-cn-jiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,14 +147,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <navigationItem title="Home" id="7hG-fh-nhb"/>
+                                    <navigationItem title="Geekなチャット" id="7hG-fh-nhb"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xFR-Dh-FQf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="HOME" id="bFG-4h-BxI"/>
+                    <tabBarItem key="tabBarItem" title="HOME" image="home4.png" id="bFG-4h-BxI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mD-BS-fTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,6 +181,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="acount.png" width="32" height="32"/>
         <image name="cat.jpeg" width="225" height="224"/>
+        <image name="crown.png" width="32" height="32"/>
+        <image name="home4.png" width="32" height="32"/>
     </resources>
 </document>

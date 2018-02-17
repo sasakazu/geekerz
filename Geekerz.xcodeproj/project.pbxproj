@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1C0E1FA4508EF443EA643C4B /* Pods_Geekerz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5994DE7A4E73F98B56D1FC59 /* Pods_Geekerz.framework */; };
+		732ACE842038207300EC3B5C /* acount.png in Resources */ = {isa = PBXBuildFile; fileRef = 732ACE832038207300EC3B5C /* acount.png */; };
+		732ACE862038210600EC3B5C /* home3.png in Resources */ = {isa = PBXBuildFile; fileRef = 732ACE852038210600EC3B5C /* home3.png */; };
+		732ACE882038213E00EC3B5C /* home4.png in Resources */ = {isa = PBXBuildFile; fileRef = 732ACE872038213E00EC3B5C /* home4.png */; };
+		732ACE8A2038217900EC3B5C /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 732ACE892038217900EC3B5C /* crown.png */; };
+		732ACE8C203821E800EC3B5C /* rankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732ACE8B203821E800EC3B5C /* rankingViewController.swift */; };
 		73F450D1203421C100921253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F450D0203421C100921253 /* AppDelegate.swift */; };
 		73F450D3203421C100921253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F450D2203421C100921253 /* ViewController.swift */; };
 		73F450D6203421C100921253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F450D4203421C100921253 /* Main.storyboard */; };
@@ -45,6 +50,11 @@
 		328B24B9460264D9D657F212 /* Pods_GeekerzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekerzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C7540CACBE5424747360B0 /* Pods-GeekerzUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekerzUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeekerzUITests/Pods-GeekerzUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5994DE7A4E73F98B56D1FC59 /* Pods_Geekerz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geekerz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		732ACE832038207300EC3B5C /* acount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acount.png; sourceTree = "<group>"; };
+		732ACE852038210600EC3B5C /* home3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home3.png; sourceTree = "<group>"; };
+		732ACE872038213E00EC3B5C /* home4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home4.png; sourceTree = "<group>"; };
+		732ACE892038217900EC3B5C /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		732ACE8B203821E800EC3B5C /* rankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rankingViewController.swift; sourceTree = "<group>"; };
 		73F450CD203421C100921253 /* Geekerz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geekerz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F450D0203421C100921253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73F450D2203421C100921253 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +140,7 @@
 				73F451062034319B00921253 /* acountViewController.swift */,
 				73F450DA203421C100921253 /* Assets.xcassets */,
 				73F450DC203421C100921253 /* LaunchScreen.storyboard */,
+				732ACE8B203821E800EC3B5C /* rankingViewController.swift */,
 				73F450DF203421C100921253 /* Info.plist */,
 				73F450D7203421C100921253 /* Geekerz.xcdatamodeld */,
 			);
@@ -157,6 +168,10 @@
 		73F451032034260300921253 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				732ACE852038210600EC3B5C /* home3.png */,
+				732ACE832038207300EC3B5C /* acount.png */,
+				732ACE892038217900EC3B5C /* crown.png */,
+				732ACE872038213E00EC3B5C /* home4.png */,
 				73F45101203425FB00921253 /* cat.jpeg */,
 			);
 			path = images;
@@ -301,11 +316,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732ACE8A2038217900EC3B5C /* crown.png in Resources */,
 				73F45102203425FB00921253 /* cat.jpeg in Resources */,
+				732ACE882038213E00EC3B5C /* home4.png in Resources */,
 				73F450DE203421C100921253 /* LaunchScreen.storyboard in Resources */,
 				73F4510520342CC000921253 /* GoogleService-Info.plist in Resources */,
+				732ACE842038207300EC3B5C /* acount.png in Resources */,
 				73F450DB203421C100921253 /* Assets.xcassets in Resources */,
 				73F450D6203421C100921253 /* Main.storyboard in Resources */,
+				732ACE862038210600EC3B5C /* home3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73F450D9203421C100921253 /* Geekerz.xcdatamodeld in Sources */,
+				732ACE8C203821E800EC3B5C /* rankingViewController.swift in Sources */,
 				73F450D3203421C100921253 /* ViewController.swift in Sources */,
 				73F451072034319B00921253 /* acountViewController.swift in Sources */,
 				73F450D1203421C100921253 /* AppDelegate.swift in Sources */,
